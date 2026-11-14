@@ -1,0 +1,1781 @@
+{
+  "version": 1,
+  "scope": "效果候选，不是项目采用状态",
+  "entries": [
+    {
+      "id": "V01",
+      "name": "沿表面发光",
+      "aliases": [
+        "亮边",
+        "表面光"
+      ],
+      "layer": "process",
+      "purpose_tags": [
+        "visible-process"
+      ],
+      "nature": [
+        "scene",
+        "ability"
+      ],
+      "required_conditions": [
+        "source-known",
+        "surface-known",
+        "authorization-known"
+      ],
+      "space_options": [
+        "object-local"
+      ],
+      "lifecycle_options": [
+        "appear",
+        "develop",
+        "sustain",
+        "stop-source",
+        "decay",
+        "residue",
+        "end"
+      ],
+      "illumination_options": [
+        "as-adopted"
+      ],
+      "result_constraints": "为亮边改物体形状或加攻击力→还原轮廓及能力。",
+      "related": [
+        "V09",
+        "F01",
+        "A05"
+      ],
+      "file": "ji-chu-guo-cheng.md",
+      "heading": "V01 沿表面发光",
+      "source_kind": "local-film-template",
+      "source_locator": "lai-yuan/zi-liao-yu-shi-yong.md",
+      "verification": "text-reviewed"
+    },
+    {
+      "id": "V02",
+      "name": "线条汇入",
+      "aliases": [
+        "汇聚",
+        "聚集"
+      ],
+      "layer": "process",
+      "purpose_tags": [
+        "visible-process"
+      ],
+      "nature": [
+        "scene",
+        "ability"
+      ],
+      "required_conditions": [
+        "source-known",
+        "authorization-known"
+      ],
+      "space_options": [
+        "object-local",
+        "world-motion"
+      ],
+      "lifecycle_options": [
+        "appear",
+        "develop",
+        "sustain",
+        "stop-source",
+        "decay",
+        "residue",
+        "end"
+      ],
+      "illumination_options": [
+        "as-adopted"
+      ],
+      "result_constraints": "全场实物被吸入→改回授权线形，不加能力。",
+      "related": [
+        "V03",
+        "V09",
+        "A01"
+      ],
+      "file": "ji-chu-guo-cheng.md",
+      "heading": "V02 线条汇入",
+      "source_kind": "local-film-template",
+      "source_locator": "lai-yuan/zi-liao-yu-shi-yong.md",
+      "verification": "text-reviewed"
+    },
+    {
+      "id": "V03",
+      "name": "局部亮团",
+      "aliases": [
+        "掌心光",
+        "聚光",
+        "光团"
+      ],
+      "layer": "process",
+      "purpose_tags": [
+        "visible-process"
+      ],
+      "nature": [
+        "scene",
+        "ability"
+      ],
+      "required_conditions": [
+        "source-known",
+        "authorization-known"
+      ],
+      "space_options": [
+        "object-local",
+        "world-fixed"
+      ],
+      "lifecycle_options": [
+        "appear",
+        "develop",
+        "sustain",
+        "stop-source",
+        "decay",
+        "residue",
+        "end"
+      ],
+      "illumination_options": [
+        "as-adopted"
+      ],
+      "result_constraints": "静态亮团自动变冲击波→删新增作用。",
+      "related": [
+        "V02",
+        "V09",
+        "A05",
+        "A06"
+      ],
+      "file": "ji-chu-guo-cheng.md",
+      "heading": "V03 局部亮团",
+      "source_kind": "local-film-template",
+      "source_locator": "lai-yuan/zi-liao-yu-shi-yong.md",
+      "verification": "text-reviewed"
+    },
+    {
+      "id": "V04",
+      "name": "薄弧带与尾迹",
+      "aliases": [
+        "剑光",
+        "拖尾",
+        "短尾迹"
+      ],
+      "layer": "process",
+      "purpose_tags": [
+        "visible-process"
+      ],
+      "nature": [
+        "scene",
+        "ability"
+      ],
+      "required_conditions": [
+        "authorization-known",
+        "motion-path-known"
+      ],
+      "space_options": [
+        "world-motion",
+        "object-local"
+      ],
+      "lifecycle_options": [
+        "appear",
+        "develop",
+        "sustain",
+        "stop-source",
+        "decay",
+        "residue",
+        "end"
+      ],
+      "illumination_options": [
+        "as-adopted"
+      ],
+      "result_constraints": "旧尾迹跟剑整体转到背后→分开新生与旧路径。",
+      "related": [
+        "V05",
+        "V09",
+        "A01",
+        "A02"
+      ],
+      "file": "ji-chu-guo-cheng.md",
+      "heading": "V04 薄弧带与尾迹",
+      "source_kind": "local-film-template",
+      "source_locator": "lai-yuan/zi-liao-yu-shi-yong.md",
+      "verification": "text-reviewed"
+    },
+    {
+      "id": "V05",
+      "name": "局部亮纹扩散",
+      "aliases": [
+        "接触亮纹",
+        "接触反馈"
+      ],
+      "layer": "process",
+      "purpose_tags": [
+        "visible-process"
+      ],
+      "nature": [
+        "scene",
+        "ability"
+      ],
+      "required_conditions": [
+        "authorization-known",
+        "contact-confirmed",
+        "surface-known"
+      ],
+      "space_options": [
+        "surface"
+      ],
+      "lifecycle_options": [
+        "appear",
+        "develop",
+        "sustain",
+        "stop-source",
+        "decay",
+        "residue",
+        "end"
+      ],
+      "illumination_options": [
+        "as-adopted"
+      ],
+      "result_constraints": "落空也亮、每镜重新闪→删失效或重复触发。",
+      "related": [
+        "V09",
+        "A02"
+      ],
+      "file": "ji-chu-guo-cheng.md",
+      "heading": "V05 局部亮纹扩散",
+      "source_kind": "local-film-template",
+      "source_locator": "lai-yuan/zi-liao-yu-shi-yong.md",
+      "verification": "text-reviewed"
+    },
+    {
+      "id": "V06",
+      "name": "裂纹与碎片",
+      "aliases": [
+        "破裂",
+        "碎片",
+        "裂纹"
+      ],
+      "layer": "process",
+      "purpose_tags": [
+        "visible-process"
+      ],
+      "nature": [
+        "scene",
+        "ability"
+      ],
+      "required_conditions": [
+        "authorization-known",
+        "break-result-confirmed",
+        "surface-known"
+      ],
+      "space_options": [
+        "surface",
+        "world-motion"
+      ],
+      "lifecycle_options": [
+        "appear",
+        "develop",
+        "sustain",
+        "stop-source",
+        "decay",
+        "residue",
+        "end"
+      ],
+      "illumination_options": [
+        "as-adopted"
+      ],
+      "result_constraints": "全物粉碎或下一镜完好→还原范围和残留。",
+      "related": [
+        "V08",
+        "V24",
+        "A04"
+      ],
+      "file": "ji-chu-guo-cheng.md",
+      "heading": "V06 裂纹与碎片",
+      "source_kind": "local-film-template",
+      "source_locator": "lai-yuan/zi-liao-yu-shi-yong.md",
+      "verification": "text-reviewed"
+    },
+    {
+      "id": "V07",
+      "name": "来源烟柱",
+      "aliases": [
+        "烟柱",
+        "喷烟",
+        "烟雾"
+      ],
+      "layer": "process",
+      "purpose_tags": [
+        "visible-process"
+      ],
+      "nature": [
+        "scene",
+        "ability"
+      ],
+      "required_conditions": [
+        "authorization-known",
+        "source-known"
+      ],
+      "space_options": [
+        "object-local",
+        "world-motion"
+      ],
+      "lifecycle_options": [
+        "appear",
+        "develop",
+        "sustain",
+        "stop-source",
+        "decay",
+        "residue",
+        "end"
+      ],
+      "illumination_options": [
+        "as-adopted"
+      ],
+      "result_constraints": "源关全烟骤灭→核规则并保旧烟；魔法撤销例外不强留。",
+      "related": [
+        "V15",
+        "A01",
+        "A03",
+        "A06"
+      ],
+      "file": "ji-chu-guo-cheng.md",
+      "heading": "V07 来源烟柱",
+      "source_kind": "local-film-template",
+      "source_locator": "lai-yuan/zi-liao-yu-shi-yong.md",
+      "verification": "text-reviewed"
+    },
+    {
+      "id": "V08",
+      "name": "颗粒散开与下落",
+      "aliases": [
+        "颗粒",
+        "散落",
+        "下落"
+      ],
+      "layer": "process",
+      "purpose_tags": [
+        "visible-process"
+      ],
+      "nature": [
+        "scene",
+        "ability"
+      ],
+      "required_conditions": [
+        "authorization-known",
+        "source-known"
+      ],
+      "space_options": [
+        "world-motion"
+      ],
+      "lifecycle_options": [
+        "appear",
+        "develop",
+        "sustain",
+        "stop-source",
+        "decay",
+        "residue",
+        "end"
+      ],
+      "illumination_options": [
+        "as-adopted"
+      ],
+      "result_constraints": "满场彩粒常驻→回任务所需元素和结束。",
+      "related": [
+        "V09",
+        "V24",
+        "A04"
+      ],
+      "file": "ji-chu-guo-cheng.md",
+      "heading": "V08 颗粒散开与下落",
+      "source_kind": "local-film-template",
+      "source_locator": "lai-yuan/zi-liao-yu-shi-yong.md",
+      "verification": "text-reviewed"
+    },
+    {
+      "id": "V09",
+      "name": "变暗与收缩",
+      "aliases": [
+        "消散",
+        "消退",
+        "变暗",
+        "收缩"
+      ],
+      "layer": "process",
+      "purpose_tags": [
+        "visible-process"
+      ],
+      "nature": [
+        "scene",
+        "ability"
+      ],
+      "required_conditions": [
+        "existing-effect-known",
+        "ending-rule-compatible"
+      ],
+      "space_options": [
+        "as-adopted"
+      ],
+      "lifecycle_options": [
+        "appear",
+        "develop",
+        "sustain",
+        "stop-source",
+        "decay",
+        "residue",
+        "end"
+      ],
+      "illumination_options": [
+        "as-adopted"
+      ],
+      "result_constraints": "统一清空所有残留→仅结束当前可消退成分。",
+      "related": [
+        "V03",
+        "V24",
+        "A06"
+      ],
+      "file": "ji-chu-guo-cheng.md",
+      "heading": "V09 变暗与收缩",
+      "source_kind": "local-film-template",
+      "source_locator": "lai-yuan/zi-liao-yu-shi-yong.md",
+      "verification": "text-reviewed"
+    },
+    {
+      "id": "V10",
+      "name": "示意路径与标注",
+      "aliases": [
+        "路径示意",
+        "标注",
+        "说明图"
+      ],
+      "layer": "process",
+      "purpose_tags": [
+        "visible-process"
+      ],
+      "nature": [
+        "schematic"
+      ],
+      "required_conditions": [
+        "authorization-known",
+        "structure-confirmed"
+      ],
+      "space_options": [
+        "screen",
+        "surface"
+      ],
+      "lifecycle_options": [
+        "appear",
+        "develop",
+        "sustain",
+        "stop-source",
+        "decay",
+        "residue",
+        "end"
+      ],
+      "illumination_options": [
+        "as-adopted"
+      ],
+      "result_constraints": "新增功能数据或语音→删越权，保示意性质。",
+      "related": [
+        "V21",
+        "F05",
+        "A08"
+      ],
+      "file": "ji-chu-guo-cheng.md",
+      "heading": "V10 示意路径与标注",
+      "source_kind": "local-film-template",
+      "source_locator": "lai-yuan/zi-liao-yu-shi-yong.md",
+      "verification": "text-reviewed"
+    },
+    {
+      "id": "V11",
+      "name": "火焰起伏与熄灭",
+      "aliases": [
+        "火焰",
+        "起燃",
+        "熄灭"
+      ],
+      "layer": "process",
+      "purpose_tags": [
+        "visible-process"
+      ],
+      "nature": [
+        "scene",
+        "ability"
+      ],
+      "required_conditions": [
+        "authorization-known",
+        "source-known"
+      ],
+      "space_options": [
+        "object-local",
+        "world-fixed"
+      ],
+      "lifecycle_options": [
+        "appear",
+        "develop",
+        "sustain",
+        "stop-source",
+        "decay",
+        "residue",
+        "end"
+      ],
+      "illumination_options": [
+        "as-adopted"
+      ],
+      "result_constraints": "有火必烧伤→继承原后果；强加烟→核授权。",
+      "related": [
+        "V07",
+        "V17",
+        "A05"
+      ],
+      "file": "kuo-zhan-guo-cheng.md",
+      "heading": "V11 火焰起伏与熄灭",
+      "source_kind": "local-film-template",
+      "source_locator": "lai-yuan/zi-liao-yu-shi-yong.md",
+      "verification": "text-reviewed"
+    },
+    {
+      "id": "V12",
+      "name": "液体流动与汇集",
+      "aliases": [
+        "水流",
+        "液流",
+        "汇集"
+      ],
+      "layer": "process",
+      "purpose_tags": [
+        "visible-process"
+      ],
+      "nature": [
+        "scene",
+        "ability"
+      ],
+      "required_conditions": [
+        "authorization-known",
+        "source-known",
+        "container-known"
+      ],
+      "space_options": [
+        "world-motion"
+      ],
+      "lifecycle_options": [
+        "appear",
+        "develop",
+        "sustain",
+        "stop-source",
+        "decay",
+        "residue",
+        "end"
+      ],
+      "illumination_options": [
+        "as-adopted"
+      ],
+      "result_constraints": "自动淹地→回容纳关系，不加积水结果。",
+      "related": [
+        "V13",
+        "V24",
+        "A03"
+      ],
+      "file": "kuo-zhan-guo-cheng.md",
+      "heading": "V12 液体流动与汇集",
+      "source_kind": "local-film-template",
+      "source_locator": "lai-yuan/zi-liao-yu-shi-yong.md",
+      "verification": "text-reviewed"
+    },
+    {
+      "id": "V13",
+      "name": "水花与液滴回落",
+      "aliases": [
+        "水花",
+        "液滴",
+        "飞溅"
+      ],
+      "layer": "process",
+      "purpose_tags": [
+        "visible-process"
+      ],
+      "nature": [
+        "scene",
+        "ability"
+      ],
+      "required_conditions": [
+        "authorization-known",
+        "source-known",
+        "container-known"
+      ],
+      "space_options": [
+        "world-motion"
+      ],
+      "lifecycle_options": [
+        "appear",
+        "develop",
+        "sustain",
+        "stop-source",
+        "decay",
+        "residue",
+        "end"
+      ],
+      "illumination_options": [
+        "as-adopted"
+      ],
+      "result_constraints": "水花必有新积水→删新增后果。",
+      "related": [
+        "V12",
+        "V24"
+      ],
+      "file": "kuo-zhan-guo-cheng.md",
+      "heading": "V13 水花与液滴回落",
+      "source_kind": "local-film-template",
+      "source_locator": "lai-yuan/zi-liao-yu-shi-yong.md",
+      "verification": "text-reviewed"
+    },
+    {
+      "id": "V14",
+      "name": "冰霜覆盖与退去",
+      "aliases": [
+        "冰霜",
+        "冻结纹路",
+        "霜纹"
+      ],
+      "layer": "process",
+      "purpose_tags": [
+        "visible-process"
+      ],
+      "nature": [
+        "scene",
+        "ability"
+      ],
+      "required_conditions": [
+        "authorization-known",
+        "surface-known"
+      ],
+      "space_options": [
+        "surface"
+      ],
+      "lifecycle_options": [
+        "appear",
+        "develop",
+        "sustain",
+        "stop-source",
+        "decay",
+        "residue",
+        "end"
+      ],
+      "illumination_options": [
+        "as-adopted"
+      ],
+      "result_constraints": "自动冻伤或碎裂→删除无据能力后果。",
+      "related": [
+        "V01",
+        "V24",
+        "F06"
+      ],
+      "file": "kuo-zhan-guo-cheng.md",
+      "heading": "V14 冰霜覆盖与退去",
+      "source_kind": "local-film-template",
+      "source_locator": "lai-yuan/zi-liao-yu-shi-yong.md",
+      "verification": "text-reviewed"
+    },
+    {
+      "id": "V15",
+      "name": "薄雾漂移与变稀",
+      "aliases": [
+        "雾",
+        "薄雾",
+        "漂移"
+      ],
+      "layer": "process",
+      "purpose_tags": [
+        "visible-process"
+      ],
+      "nature": [
+        "scene",
+        "ability"
+      ],
+      "required_conditions": [
+        "authorization-known",
+        "source-known"
+      ],
+      "space_options": [
+        "world-motion"
+      ],
+      "lifecycle_options": [
+        "appear",
+        "develop",
+        "sustain",
+        "stop-source",
+        "decay",
+        "residue",
+        "end"
+      ],
+      "illumination_options": [
+        "as-adopted"
+      ],
+      "result_constraints": "切镜突然满场或清空→继承原分布。",
+      "related": [
+        "V07",
+        "A03",
+        "A04"
+      ],
+      "file": "kuo-zhan-guo-cheng.md",
+      "heading": "V15 薄雾漂移与变稀",
+      "source_kind": "local-film-template",
+      "source_locator": "lai-yuan/zi-liao-yu-shi-yong.md",
+      "verification": "text-reviewed"
+    },
+    {
+      "id": "V16",
+      "name": "电弧分支与断开",
+      "aliases": [
+        "电弧",
+        "雷电",
+        "分支"
+      ],
+      "layer": "process",
+      "purpose_tags": [
+        "visible-process"
+      ],
+      "nature": [
+        "scene",
+        "ability"
+      ],
+      "required_conditions": [
+        "authorization-known",
+        "source-known"
+      ],
+      "space_options": [
+        "world-motion",
+        "object-local"
+      ],
+      "lifecycle_options": [
+        "appear",
+        "develop",
+        "sustain",
+        "stop-source",
+        "decay",
+        "residue",
+        "end"
+      ],
+      "illumination_options": [
+        "as-adopted"
+      ],
+      "result_constraints": "视觉分叉自动连锁攻击→还原作用对象。",
+      "related": [
+        "V17",
+        "F02",
+        "A07"
+      ],
+      "file": "kuo-zhan-guo-cheng.md",
+      "heading": "V16 电弧分支与断开",
+      "source_kind": "local-film-template",
+      "source_locator": "lai-yuan/zi-liao-yu-shi-yong.md",
+      "verification": "text-reviewed"
+    },
+    {
+      "id": "V17",
+      "name": "短暂亮闪",
+      "aliases": [
+        "闪光",
+        "突闪",
+        "亮闪"
+      ],
+      "layer": "process",
+      "purpose_tags": [
+        "visible-process"
+      ],
+      "nature": [
+        "scene",
+        "ability"
+      ],
+      "required_conditions": [
+        "authorization-known",
+        "source-known"
+      ],
+      "space_options": [
+        "world-fixed",
+        "screen"
+      ],
+      "lifecycle_options": [
+        "appear",
+        "end"
+      ],
+      "illumination_options": [
+        "as-adopted"
+      ],
+      "result_constraints": "闪白证明命中→查CT；无因停顿→删。",
+      "related": [
+        "V05",
+        "A05"
+      ],
+      "file": "kuo-zhan-guo-cheng.md",
+      "heading": "V17 短暂亮闪",
+      "source_kind": "local-film-template",
+      "source_locator": "lai-yuan/zi-liao-yu-shi-yong.md",
+      "verification": "text-reviewed"
+    },
+    {
+      "id": "V18",
+      "name": "局部扭曲与折射感",
+      "aliases": [
+        "扭曲",
+        "折射",
+        "热浪感"
+      ],
+      "layer": "process",
+      "purpose_tags": [
+        "visible-process"
+      ],
+      "nature": [
+        "scene",
+        "ability",
+        "subjective",
+        "stylistic"
+      ],
+      "required_conditions": [
+        "authorization-known",
+        "region-known"
+      ],
+      "space_options": [
+        "world-fixed",
+        "screen",
+        "view-subjective"
+      ],
+      "lifecycle_options": [
+        "appear",
+        "develop",
+        "sustain",
+        "stop-source",
+        "decay",
+        "residue",
+        "end"
+      ],
+      "illumination_options": [
+        "as-adopted"
+      ],
+      "result_constraints": "镜头扭曲变场景重建→分开视觉与真实状态。",
+      "related": [
+        "V21",
+        "A04"
+      ],
+      "file": "kuo-zhan-guo-cheng.md",
+      "heading": "V18 局部扭曲与折射感",
+      "source_kind": "local-film-template",
+      "source_locator": "lai-yuan/zi-liao-yu-shi-yong.md",
+      "verification": "text-reviewed"
+    },
+    {
+      "id": "V19",
+      "name": "溶解与消隐",
+      "aliases": [
+        "消隐",
+        "溶解",
+        "淡去"
+      ],
+      "layer": "process",
+      "purpose_tags": [
+        "visible-process"
+      ],
+      "nature": [
+        "scene",
+        "ability",
+        "subjective",
+        "stylistic"
+      ],
+      "required_conditions": [
+        "authorization-known",
+        "existence-rule-known"
+      ],
+      "space_options": [
+        "surface",
+        "screen"
+      ],
+      "lifecycle_options": [
+        "appear",
+        "develop",
+        "sustain",
+        "stop-source",
+        "decay",
+        "residue",
+        "end"
+      ],
+      "illumination_options": [
+        "as-adopted"
+      ],
+      "result_constraints": "消隐等于死亡或能穿过实体→恢复性质约束。",
+      "related": [
+        "V20",
+        "V21",
+        "A06"
+      ],
+      "file": "kuo-zhan-guo-cheng.md",
+      "heading": "V19 溶解与消隐",
+      "source_kind": "local-film-template",
+      "source_locator": "lai-yuan/zi-liao-yu-shi-yong.md",
+      "verification": "text-reviewed"
+    },
+    {
+      "id": "V20",
+      "name": "形态重组与显形",
+      "aliases": [
+        "显形",
+        "重组",
+        "变形"
+      ],
+      "layer": "process",
+      "purpose_tags": [
+        "visible-process"
+      ],
+      "nature": [
+        "scene",
+        "ability"
+      ],
+      "required_conditions": [
+        "authorization-known",
+        "end-form-confirmed"
+      ],
+      "space_options": [
+        "object-local",
+        "world-fixed"
+      ],
+      "lifecycle_options": [
+        "appear",
+        "develop",
+        "sustain",
+        "stop-source",
+        "decay",
+        "residue",
+        "end"
+      ],
+      "illumination_options": [
+        "as-adopted"
+      ],
+      "result_constraints": "重组自动加武器功能→删新增设定。",
+      "related": [
+        "V19",
+        "V21"
+      ],
+      "file": "kuo-zhan-guo-cheng.md",
+      "heading": "V20 形态重组与显形",
+      "source_kind": "local-film-template",
+      "source_locator": "lai-yuan/zi-liao-yu-shi-yong.md",
+      "verification": "text-reviewed"
+    },
+    {
+      "id": "V21",
+      "name": "局部揭示与遮罩",
+      "aliases": [
+        "揭示",
+        "遮罩",
+        "透视示意"
+      ],
+      "layer": "process",
+      "purpose_tags": [
+        "visible-process"
+      ],
+      "nature": [
+        "schematic",
+        "subjective",
+        "stylistic",
+        "ability"
+      ],
+      "required_conditions": [
+        "authorization-known",
+        "region-known"
+      ],
+      "space_options": [
+        "screen",
+        "surface",
+        "view-subjective"
+      ],
+      "lifecycle_options": [
+        "appear",
+        "develop",
+        "sustain",
+        "stop-source",
+        "decay",
+        "residue",
+        "end"
+      ],
+      "illumination_options": [
+        "as-adopted"
+      ],
+      "result_constraints": "揭示未知内部结构→保留未定，不补证据。",
+      "related": [
+        "V10",
+        "V19",
+        "A08"
+      ],
+      "file": "kuo-zhan-guo-cheng.md",
+      "heading": "V21 局部揭示与遮罩",
+      "source_kind": "local-film-template",
+      "source_locator": "lai-yuan/zi-liao-yu-shi-yong.md",
+      "verification": "text-reviewed"
+    },
+    {
+      "id": "V22",
+      "name": "运动残像",
+      "aliases": [
+        "残像",
+        "幻影轨迹"
+      ],
+      "layer": "process",
+      "purpose_tags": [
+        "visible-process"
+      ],
+      "nature": [
+        "stylistic",
+        "subjective",
+        "ability"
+      ],
+      "required_conditions": [
+        "authorization-known",
+        "motion-path-known"
+      ],
+      "space_options": [
+        "world-motion",
+        "screen"
+      ],
+      "lifecycle_options": [
+        "appear",
+        "develop",
+        "sustain",
+        "stop-source",
+        "decay",
+        "residue",
+        "end"
+      ],
+      "illumination_options": [
+        "as-adopted"
+      ],
+      "result_constraints": "残像行动、格挡→删分身能力。",
+      "related": [
+        "V04",
+        "V09"
+      ],
+      "file": "kuo-zhan-guo-cheng.md",
+      "heading": "V22 运动残像",
+      "source_kind": "local-film-template",
+      "source_locator": "lai-yuan/zi-liao-yu-shi-yong.md",
+      "verification": "text-reviewed"
+    },
+    {
+      "id": "V23",
+      "name": "通道边界与开合",
+      "aliases": [
+        "传送门",
+        "通道",
+        "开合"
+      ],
+      "layer": "process",
+      "purpose_tags": [
+        "visible-process"
+      ],
+      "nature": [
+        "ability"
+      ],
+      "required_conditions": [
+        "authorization-known",
+        "ability-rule-confirmed"
+      ],
+      "space_options": [
+        "world-fixed"
+      ],
+      "lifecycle_options": [
+        "appear",
+        "develop",
+        "sustain",
+        "stop-source",
+        "decay",
+        "residue",
+        "end"
+      ],
+      "illumination_options": [
+        "as-adopted"
+      ],
+      "result_constraints": "画环就新增传送→删除无依据机制。",
+      "related": [
+        "V01",
+        "V20",
+        "A06"
+      ],
+      "file": "kuo-zhan-guo-cheng.md",
+      "heading": "V23 通道边界与开合",
+      "source_kind": "local-film-template",
+      "source_locator": "lai-yuan/zi-liao-yu-shi-yong.md",
+      "verification": "text-reviewed"
+    },
+    {
+      "id": "V24",
+      "name": "表面附着残留",
+      "aliases": [
+        "残留",
+        "湿痕",
+        "粉尘"
+      ],
+      "layer": "process",
+      "purpose_tags": [
+        "visible-process"
+      ],
+      "nature": [
+        "scene",
+        "ability"
+      ],
+      "required_conditions": [
+        "authorization-known",
+        "residue-authorized",
+        "surface-known"
+      ],
+      "space_options": [
+        "surface"
+      ],
+      "lifecycle_options": [
+        "residue",
+        "end"
+      ],
+      "illumination_options": [
+        "as-adopted"
+      ],
+      "result_constraints": "一律永久损坏或全部消失→按具体后果处理。",
+      "related": [
+        "V06",
+        "V13",
+        "A03"
+      ],
+      "file": "kuo-zhan-guo-cheng.md",
+      "heading": "V24 表面附着残留",
+      "source_kind": "local-film-template",
+      "source_locator": "lai-yuan/zi-liao-yu-shi-yong.md",
+      "verification": "text-reviewed"
+    },
+    {
+      "id": "F01",
+      "name": "柔性薄膜家族",
+      "aliases": [
+        "薄膜家族"
+      ],
+      "layer": "family",
+      "purpose_tags": [
+        "visual-consistency"
+      ],
+      "nature": [
+        "ability",
+        "stylistic"
+      ],
+      "required_conditions": [
+        "authorization-known"
+      ],
+      "space_options": [
+        "as-adopted"
+      ],
+      "lifecycle_options": [
+        "appear",
+        "develop",
+        "sustain",
+        "stop-source",
+        "decay",
+        "residue",
+        "end"
+      ],
+      "illumination_options": [
+        "as-adopted"
+      ],
+      "result_constraints": "变成火纹且自动挡伤→还原视觉与能力边界。",
+      "related": [
+        "V01",
+        "V09"
+      ],
+      "file": "shi-jue-jia-zu.md",
+      "heading": "F01 柔性薄膜家族",
+      "source_kind": "local-film-template",
+      "source_locator": "lai-yuan/zi-liao-yu-shi-yong.md",
+      "verification": "text-reviewed"
+    },
+    {
+      "id": "F02",
+      "name": "分支电弧家族",
+      "aliases": [
+        "电弧家族"
+      ],
+      "layer": "family",
+      "purpose_tags": [
+        "visual-consistency"
+      ],
+      "nature": [
+        "ability",
+        "scene"
+      ],
+      "required_conditions": [
+        "authorization-known"
+      ],
+      "space_options": [
+        "as-adopted"
+      ],
+      "lifecycle_options": [
+        "appear",
+        "develop",
+        "sustain",
+        "stop-source",
+        "decay",
+        "residue",
+        "end"
+      ],
+      "illumination_options": [
+        "as-adopted"
+      ],
+      "result_constraints": "加分支就新增连锁伤害→删能力扩展。",
+      "related": [
+        "V16",
+        "V17"
+      ],
+      "file": "shi-jue-jia-zu.md",
+      "heading": "F02 分支电弧家族",
+      "source_kind": "local-film-template",
+      "source_locator": "lai-yuan/zi-liao-yu-shi-yong.md",
+      "verification": "text-reviewed"
+    },
+    {
+      "id": "F03",
+      "name": "烟尘团块家族",
+      "aliases": [
+        "烟尘家族"
+      ],
+      "layer": "family",
+      "purpose_tags": [
+        "visual-consistency"
+      ],
+      "nature": [
+        "scene",
+        "ability"
+      ],
+      "required_conditions": [
+        "authorization-known"
+      ],
+      "space_options": [
+        "as-adopted"
+      ],
+      "lifecycle_options": [
+        "appear",
+        "develop",
+        "sustain",
+        "stop-source",
+        "decay",
+        "residue",
+        "end"
+      ],
+      "illumination_options": [
+        "as-adopted"
+      ],
+      "result_constraints": "一浓就爆炸/有毒→删除新后果。",
+      "related": [
+        "V07",
+        "V15"
+      ],
+      "file": "shi-jue-jia-zu.md",
+      "heading": "F03 烟尘团块家族",
+      "source_kind": "local-film-template",
+      "source_locator": "lai-yuan/zi-liao-yu-shi-yong.md",
+      "verification": "text-reviewed"
+    },
+    {
+      "id": "F04",
+      "name": "水墨扩散家族",
+      "aliases": [
+        "水墨",
+        "墨团"
+      ],
+      "layer": "family",
+      "purpose_tags": [
+        "visual-consistency"
+      ],
+      "nature": [
+        "stylistic",
+        "subjective",
+        "ability"
+      ],
+      "required_conditions": [
+        "authorization-known"
+      ],
+      "space_options": [
+        "as-adopted"
+      ],
+      "lifecycle_options": [
+        "appear",
+        "develop",
+        "sustain",
+        "stop-source",
+        "decay",
+        "residue",
+        "end"
+      ],
+      "illumination_options": [
+        "as-adopted"
+      ],
+      "result_constraints": "面积大就实体被吞→还原性质。",
+      "related": [
+        "V19",
+        "V21"
+      ],
+      "file": "shi-jue-jia-zu.md",
+      "heading": "F04 水墨扩散家族",
+      "source_kind": "local-film-template",
+      "source_locator": "lai-yuan/zi-liao-yu-shi-yong.md",
+      "verification": "text-reviewed"
+    },
+    {
+      "id": "F05",
+      "name": "硬边信息图形家族",
+      "aliases": [
+        "信息图形",
+        "全息图形"
+      ],
+      "layer": "family",
+      "purpose_tags": [
+        "visual-consistency"
+      ],
+      "nature": [
+        "schematic",
+        "ability"
+      ],
+      "required_conditions": [
+        "authorization-known",
+        "structure-confirmed"
+      ],
+      "space_options": [
+        "as-adopted"
+      ],
+      "lifecycle_options": [
+        "appear",
+        "develop",
+        "sustain",
+        "stop-source",
+        "decay",
+        "residue",
+        "end"
+      ],
+      "illumination_options": [
+        "as-adopted"
+      ],
+      "result_constraints": "新扫描数据和自动语音→删无据功能。",
+      "related": [
+        "V10",
+        "V21",
+        "A08"
+      ],
+      "file": "shi-jue-jia-zu.md",
+      "heading": "F05 硬边信息图形家族",
+      "source_kind": "local-film-template",
+      "source_locator": "lai-yuan/zi-liao-yu-shi-yong.md",
+      "verification": "text-reviewed"
+    },
+    {
+      "id": "F06",
+      "name": "霜纹晶面家族",
+      "aliases": [
+        "冰霜家族",
+        "晶面"
+      ],
+      "layer": "family",
+      "purpose_tags": [
+        "visual-consistency"
+      ],
+      "nature": [
+        "scene",
+        "ability"
+      ],
+      "required_conditions": [
+        "authorization-known",
+        "surface-known"
+      ],
+      "space_options": [
+        "as-adopted"
+      ],
+      "lifecycle_options": [
+        "appear",
+        "develop",
+        "sustain",
+        "stop-source",
+        "decay",
+        "residue",
+        "end"
+      ],
+      "illumination_options": [
+        "as-adopted"
+      ],
+      "result_constraints": "覆盖变厚自动冻伤或碎裂→删除无据结果。",
+      "related": [
+        "V14",
+        "V24"
+      ],
+      "file": "shi-jue-jia-zu.md",
+      "heading": "F06 霜纹晶面家族",
+      "source_kind": "local-film-template",
+      "source_locator": "lai-yuan/zi-liao-yu-shi-yong.md",
+      "verification": "text-reviewed"
+    },
+    {
+      "id": "A01",
+      "name": "移动来源与旧内容分离",
+      "aliases": [
+        "移动源",
+        "源跟随"
+      ],
+      "layer": "application",
+      "purpose_tags": [
+        "continuity-application"
+      ],
+      "nature": [
+        "scene",
+        "ability"
+      ],
+      "required_conditions": [
+        "authorization-known",
+        "source-known",
+        "motion-path-known"
+      ],
+      "space_options": [
+        "as-adopted"
+      ],
+      "lifecycle_options": [
+        "appear",
+        "develop",
+        "sustain",
+        "stop-source",
+        "decay",
+        "residue",
+        "end"
+      ],
+      "illumination_options": [
+        "as-adopted"
+      ],
+      "result_constraints": "全烟瞬移→分拆绑定，别改人物路径。",
+      "related": [
+        "V04",
+        "V07"
+      ],
+      "file": "chang-jing-ying-yong.md",
+      "heading": "A01 移动来源与旧内容分离",
+      "source_kind": "local-film-template",
+      "source_locator": "lai-yuan/zi-liao-yu-shi-yong.md",
+      "verification": "text-reviewed"
+    },
+    {
+      "id": "A02",
+      "name": "剑光落空与一次接触",
+      "aliases": [
+        "落空特效",
+        "跨镜接触"
+      ],
+      "layer": "application",
+      "purpose_tags": [
+        "continuity-application"
+      ],
+      "nature": [
+        "scene",
+        "ability"
+      ],
+      "required_conditions": [
+        "authorization-known",
+        "motion-path-known"
+      ],
+      "space_options": [
+        "as-adopted"
+      ],
+      "lifecycle_options": [
+        "appear",
+        "develop",
+        "sustain",
+        "stop-source",
+        "decay",
+        "residue",
+        "end"
+      ],
+      "illumination_options": [
+        "as-adopted"
+      ],
+      "result_constraints": "尾迹命中或重复闪→核CT和实例次数。",
+      "related": [
+        "V04",
+        "V05"
+      ],
+      "file": "chang-jing-ying-yong.md",
+      "heading": "A02 剑光落空与一次接触",
+      "source_kind": "local-film-template",
+      "source_locator": "lai-yuan/zi-liao-yu-shi-yong.md",
+      "verification": "text-reviewed"
+    },
+    {
+      "id": "A03",
+      "name": "停止来源后的残留",
+      "aliases": [
+        "停源",
+        "旧烟",
+        "残留"
+      ],
+      "layer": "application",
+      "purpose_tags": [
+        "continuity-application"
+      ],
+      "nature": [
+        "scene",
+        "ability"
+      ],
+      "required_conditions": [
+        "authorization-known",
+        "source-known",
+        "ending-rule-compatible"
+      ],
+      "space_options": [
+        "as-adopted"
+      ],
+      "lifecycle_options": [
+        "appear",
+        "develop",
+        "sustain",
+        "stop-source",
+        "decay",
+        "residue",
+        "end"
+      ],
+      "illumination_options": [
+        "as-adopted"
+      ],
+      "result_constraints": "全清/强留魔法烟→按设定修阶段。",
+      "related": [
+        "V07",
+        "V09",
+        "V24"
+      ],
+      "file": "chang-jing-ying-yong.md",
+      "heading": "A03 停止来源后的残留",
+      "source_kind": "local-film-template",
+      "source_locator": "lai-yuan/zi-liao-yu-shi-yong.md",
+      "verification": "text-reviewed"
+    },
+    {
+      "id": "A04",
+      "name": "遮挡重现与视点变化",
+      "aliases": [
+        "遮挡",
+        "重现",
+        "换视点"
+      ],
+      "layer": "application",
+      "purpose_tags": [
+        "continuity-application"
+      ],
+      "nature": [
+        "scene",
+        "ability"
+      ],
+      "required_conditions": [
+        "authorization-known",
+        "region-known"
+      ],
+      "space_options": [
+        "as-adopted"
+      ],
+      "lifecycle_options": [
+        "appear",
+        "develop",
+        "sustain",
+        "stop-source",
+        "decay",
+        "residue",
+        "end"
+      ],
+      "illumination_options": [
+        "as-adopted"
+      ],
+      "result_constraints": "全禁遮脸或烟后瞬移→分别修信息层级和连续性。",
+      "related": [
+        "V15",
+        "V18"
+      ],
+      "file": "chang-jing-ying-yong.md",
+      "heading": "A04 遮挡重现与视点变化",
+      "source_kind": "local-film-template",
+      "source_locator": "lai-yuan/zi-liao-yu-shi-yong.md",
+      "verification": "text-reviewed"
+    },
+    {
+      "id": "A05",
+      "name": "发亮与环境受光交接",
+      "aliases": [
+        "发光",
+        "受光",
+        "照明交接"
+      ],
+      "layer": "application",
+      "purpose_tags": [
+        "continuity-application"
+      ],
+      "nature": [
+        "scene",
+        "ability"
+      ],
+      "required_conditions": [
+        "authorization-known",
+        "source-known",
+        "illumination-rule-known"
+      ],
+      "space_options": [
+        "as-adopted"
+      ],
+      "lifecycle_options": [
+        "appear",
+        "develop",
+        "sustain",
+        "stop-source",
+        "decay",
+        "residue",
+        "end"
+      ],
+      "illumination_options": [
+        "as-adopted"
+      ],
+      "result_constraints": "光团熄而手仍蓝亮→核新增受光；不改已有场景蓝光。",
+      "related": [
+        "V03",
+        "V17"
+      ],
+      "file": "chang-jing-ying-yong.md",
+      "heading": "A05 发亮与环境受光交接",
+      "source_kind": "local-film-template",
+      "source_locator": "lai-yuan/zi-liao-yu-shi-yong.md",
+      "verification": "text-reviewed"
+    },
+    {
+      "id": "A06",
+      "name": "取消打断与重新启动",
+      "aliases": [
+        "取消",
+        "打断",
+        "重启"
+      ],
+      "layer": "application",
+      "purpose_tags": [
+        "continuity-application"
+      ],
+      "nature": [
+        "scene",
+        "ability"
+      ],
+      "required_conditions": [
+        "authorization-known",
+        "existing-effect-known",
+        "ending-rule-compatible"
+      ],
+      "space_options": [
+        "as-adopted"
+      ],
+      "lifecycle_options": [
+        "appear",
+        "develop",
+        "sustain",
+        "stop-source",
+        "decay",
+        "residue",
+        "end"
+      ],
+      "illumination_options": [
+        "as-adopted"
+      ],
+      "result_constraints": "重启清空场景或把两次发起并一次→修实例。",
+      "related": [
+        "V09",
+        "V19",
+        "V23"
+      ],
+      "file": "chang-jing-ying-yong.md",
+      "heading": "A06 取消打断与重新启动",
+      "source_kind": "local-film-template",
+      "source_locator": "lai-yuan/zi-liao-yu-shi-yong.md",
+      "verification": "text-reviewed"
+    },
+    {
+      "id": "A07",
+      "name": "多来源重叠而不合并能力",
+      "aliases": [
+        "多来源",
+        "重叠",
+        "多特效"
+      ],
+      "layer": "application",
+      "purpose_tags": [
+        "continuity-application"
+      ],
+      "nature": [
+        "scene",
+        "ability"
+      ],
+      "required_conditions": [
+        "authorization-known",
+        "source-known"
+      ],
+      "space_options": [
+        "as-adopted"
+      ],
+      "lifecycle_options": [
+        "appear",
+        "develop",
+        "sustain",
+        "stop-source",
+        "decay",
+        "residue",
+        "end"
+      ],
+      "illumination_options": [
+        "as-adopted"
+      ],
+      "result_constraints": "视觉相交变合击增强→删新增能力与后果。",
+      "related": [
+        "V16",
+        "V04"
+      ],
+      "file": "chang-jing-ying-yong.md",
+      "heading": "A07 多来源重叠而不合并能力",
+      "source_kind": "local-film-template",
+      "source_locator": "lai-yuan/zi-liao-yu-shi-yong.md",
+      "verification": "text-reviewed"
+    },
+    {
+      "id": "A08",
+      "name": "产品示意与真实结构",
+      "aliases": [
+        "产品示意",
+        "结构标注"
+      ],
+      "layer": "application",
+      "purpose_tags": [
+        "continuity-application"
+      ],
+      "nature": [
+        "schematic"
+      ],
+      "required_conditions": [
+        "authorization-known",
+        "structure-confirmed"
+      ],
+      "space_options": [
+        "as-adopted"
+      ],
+      "lifecycle_options": [
+        "appear",
+        "develop",
+        "sustain",
+        "stop-source",
+        "decay",
+        "residue",
+        "end"
+      ],
+      "illumination_options": [
+        "as-adopted"
+      ],
+      "result_constraints": "凭空内构或医学功效→保未定，不造事实。",
+      "related": [
+        "V10",
+        "V21",
+        "F05"
+      ],
+      "file": "chang-jing-ying-yong.md",
+      "heading": "A08 产品示意与真实结构",
+      "source_kind": "local-film-template",
+      "source_locator": "lai-yuan/zi-liao-yu-shi-yong.md",
+      "verification": "text-reviewed"
+    }
+  ]
+}
