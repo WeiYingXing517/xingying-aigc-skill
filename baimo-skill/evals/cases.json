@@ -1,0 +1,13 @@
+{
+  "status": "planned_cases_not_results",
+  "cases": [
+    {"id":"scene-only","task":"根据一张室内场景图搭白模","check":"无自行增加的人物和分镜，隐藏空间假设有标注"},
+    {"id":"two-shots","task":"同场景建立两个站位不同的镜头","check":"切换时分别恢复人物、物件与摄影机"},
+    {"id":"start-not-end","task":"制作走到桌边坐下的起始构图","check":"按源切入时刻，不误用坐下终态"},
+    {"id":"camera-isolation","task":"保存镜头后绕场景观察","check":"拍摄机位不变"},
+    {"id":"round-trip","task":"保存工程并重新载入","check":"结构、所有镜头、姿态和相机一致"},
+    {"id":"clean-export","task":"打开网格与选中控件后导出PNG","check":"尺寸正确，无辅助元素，构图与预览一致"},
+    {"id":"local-edit","task":"只修改镜头2人物位置","check":"镜头1保持不变，共享变更另列影响"},
+    {"id":"intentional-contact","task":"人物坐椅子且道具被部分遮挡","check":"不凭相交或遮挡直接误报"}
+  ]
+}

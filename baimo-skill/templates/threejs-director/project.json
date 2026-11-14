@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "name": "空白场景",
+  "mode": "scene",
+  "units": "m",
+  "revision": 0,
+  "source": {},
+  "assumptions": [],
+  "sceneObjects": [],
+  "working": {"actors": [], "camera": {"position": [7,5,9], "target": [0,1,0], "fov": 45, "aspect": 1.7777777777777777}},
+  "shots": []
+}
